@@ -11,8 +11,8 @@ from search_items import search_items
 
 app = Flask(__name__)
 # LINE BOT info
-line_bot_api = LineBotApi('SP1vXi5BkkR6FcVegl+gSRSNkuuKNp7JcGvAFI2AIq8MRS1d5ghykGBTMvvfAuNoAI7fvxMx1DHvpe+6I+nLe495mdoq0OwCwJCjnSE8IY4QzrD54+vnP7aPvXeihYlmbqkyO9BF4cPiS1JQXSSTOAdB04t89/1O/w1cDnyilFU=')
-handler = WebhookHandler('80b3674657a8bd701d965046f7d432e2')
+line_bot_api = LineBotApi('Channel Access Token')
+handler = WebhookHandler('Channel Secret')
 
 @app.route("/callback", methods=['POST'])
 def callback():
